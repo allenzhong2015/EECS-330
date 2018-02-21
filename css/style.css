@@ -323,6 +323,12 @@ padding-right: 20%;
 .title-header{
   margin-top: 20px;
 }
+
+.alert-button{
+  font-size: 16px;
+  float: left;
+  margin-left: 100px;
+}
 /* -------------------------------- 
 
 Main Components 
