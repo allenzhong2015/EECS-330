@@ -110,7 +110,7 @@ span.psw {
 
 
 </style>
- </head>
+</head>
 <body>
 
 <title>Punctuality Helper</title>
@@ -138,13 +138,14 @@ span.psw {
 		<label for="psw-repeat"><b>Repeat Password</b></label>
     	<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
+
 		<button type="submit">Login</button>
 
 		<label><input type="checkbox" checked="checked" name="remember">Remember me</label>
 	</div>
 
 	<div class="container" style="background-color: #f1f1f1">
-		<a href="home.html">
+		<a href="index.html">
 			<div class="cancel-info">
 				<button type="button" class="cancelbtn">Cancel</button>
 			</div>
@@ -152,18 +153,23 @@ span.psw {
 	</div>
 </form>
 
-	<div class="terms">
-		<p> By creating an account, you agree to our Terms & Services.
-		</p>
-	</div>
+<div class="terms">
+	<p> By creating an account, you agree to our Terms & Services.
+	</p>
+</div>
 <br>
 
 <script type="text/javascript">
 	function goToIndex(e) {
 		e.preventDefault();
-		window.location.href = window.location.href.replace("signup.html", "index.html");
+		window.location.href = window.location.href.replace("signup.html", "index_home.html");
 }
 
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
 </script>
 </body>
 </html>
