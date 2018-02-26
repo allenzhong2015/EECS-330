@@ -103,7 +103,7 @@ span.psw {
 	<p>Sign in with your Punctuality Helper Account</p>
 </div>
 
-<form action="/action_page.php">
+<form onsubmit="goToIndex(event)">
 	<div class="logo_container">
 		<img src="login_photo.png" class="avatar" alt="Avatar">
 	</div>
@@ -115,19 +115,29 @@ span.psw {
 		<label for="psw"><b>Password</b></label>
 		<input type="password" placeholder="Enter Password" name="psw" required>
 
-		<button type="submit">Login</button>
+		<a href="index.html">
+			<div>
+				<button type="submit">Login</button>
+			</div>
+		</a>		
+
 		<label><input type="checkbox" checked="checked" name="remember">Remember me</label>
-		<span class="psw"><a href="#">Forgot password?</a></span>
+		<span class="psw"><a href="forgot_password.html">Forgot password?</a></span>
 	</div>
 
 	<div class="container" style="background-color: #f1f1f1">
 		<div class="create-acc">
-			<span><a href="#">Create an Account</a><span>
+			<span><a href="signup.html">Create an Account</a><span>
 		</div>
 	</div>
 </form>
 <br>
 
-
+<script type="text/javascript">
+	function goToIndex(e) {
+		e.preventDefault();
+		window.location.href = window.location.href.replace("home.html", "index.html");
+	}
+</script>
 </body>
 </html>
