@@ -11,7 +11,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form {border: 3px solid #f1f1f1;}
 
 
-input[type=fname], input[type=lname], input[type=text], input[type=password] {
+input[type=fname], input[type=lname], input[type=text], input[type=password], input[type=email] {
 	width: 100%;
 	padding: 15px;
 	margin: 5px 0 22px 0;
@@ -31,7 +31,7 @@ hr {
 }
 
 button {
-	background-color: #4CAF50;
+	background-color: #2185d0;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
@@ -161,7 +161,7 @@ span.psw {
 	<p>Create your Punctuality Helper Account</p>
 </div>
 
-<div class="form">
+<form class="form" id = "login_form" onsubmit="goToIndex(event)">
 	<div class="container">
 		<p>Please fill in this form to create your account.</p>
 		<hr>
@@ -172,7 +172,7 @@ span.psw {
 		<input type="fname" placeholder="Enter Last Name" name="lname" required>
 
 		<label for="email"><b>Email</b></label>
-		<input type="text" placeholder="Enter Email" name="email" required>
+		<input type="email" placeholder="Enter Email" name="email" required>
 
 		<label for="psw"><b>Password</b></label>
 		<input type="password" placeholder="Enter Password" name="psw" required>
@@ -180,20 +180,10 @@ span.psw {
 		<label for="psw-repeat"><b>Repeat Password</b></label>
     	<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
+    	<a href="signup.html">
+		<button id="myBtn" type="submit">Sign up</button>
+		</a>
 
-		<button id="myBtn" onsubmit="return false;">Login</button>
-
-		<div id="myModal" class="modal">
-			<div class="modal-content">
-				<span class="close">&times;</span>
-				<p>Congratulations! You have successfully created your Punctualtity Helper account. Click here to return to the Login page.</p>
-				<div class="return-page">
-					<a href="index.html">
-						<button class="return">Return to Login</button>
-					</a>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<div class="container" style="background-color: #f1f1f1">
@@ -203,7 +193,21 @@ span.psw {
 			</div>
 		</a>
 	</div>
-</div>
+</form>
+
+	<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Congratulations! You have successfully created your Punctualtity Helper account. Click here to return to the Login page.</p>
+				<div class="return-page">
+					<a href="index.html">
+					<div>
+						<button id ="ret" class="return">Return to Login</button>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
 
 
 <div class="terms">
@@ -224,17 +228,19 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+var ret_btn = document.getElementById("ret");
+
+
+
+function goToIndex(e) {
+	// When the user clicks the button, open the modal 
+	console.log(e)
+	e.preventDefault();
+	modal.style.display = "block";
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-
+		
+	}
 </script>
 </body>
 </html>

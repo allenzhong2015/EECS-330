@@ -46,13 +46,35 @@ padding-right: 20%;
 
 /* important events */
 #ip2 {
-    border: 1px solid #2185d0;
+    border: 2px solid #663399;
     padding: 8%; 
     width: 100%;
     text-align: center;
     font-size: 120%;
 }
 
+#ip3 {
+    border: 2px solid #5F9EA0;
+    padding: 8%; 
+    width: 100%;
+    text-align: center;
+    font-size: 120%;
+}
+
+#ip4 {
+    border: 2px solid #DAA520;
+    padding: 8%; 
+    width: 100%;
+    text-align: center;
+    font-size: 120%;
+}
+/*
+.event-buttons{
+  position: absolute;
+  padding-left: 20%;
+  margin-left: 20px;
+}
+*/
 .week {
   font-size: 23px;
   padding-left: 0.3%;
@@ -134,7 +156,7 @@ padding-right: 20%;
 .form-page {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 3; /* Sit on top */
     padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
@@ -173,6 +195,20 @@ padding-right: 20%;
     cursor: pointer;
 }
 
+.form_close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form_close2:hover,
+.form_close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .HomeEventButton {
   -webkit-border-radius: 60;
   -moz-border-radius: 60;
@@ -205,22 +241,35 @@ padding-right: 20%;
 }
 
 .event-size {
-  font-size: 18px;
+  font-size: 24px;
+  height: 36px;
 }
 
+.date-size {
+  height: 36.2px;
+  font-size: 18px;
+}
 
 .date-wrapper {
   text-align: left;
   margin: 0px 0px 25px 0px;
+  font-size: 20px;
 }
 
 .time-size {
-  height: 24.4px;
+  font-size: 18px;
+  height: 36px;
 }
 
 .repeat-size {
   margin-left: 100px;
-  height: 22.5px;
+  height: 36px;
+  font-size: 18px;
+}
+
+.location-size {
+  height: 36px;
+  font-size: 18px;
 }
 
 .location-repeat-wrapper {
@@ -230,6 +279,12 @@ padding-right: 20%;
 
 .notification {
   text-align: left;
+  font-size: 20px;
+}
+
+.notify-size {
+  height: 36px;
+  font-size: 18px;
 }
 
 .form-button {
@@ -262,6 +317,13 @@ padding-right: 20%;
   font-size: 100%;
   letter-spacing: 3px;
   font-weight: bold;
+  color: black;
+}
+
+.current-date-font {
+  font-size: 100%;
+  letter-spacing: 3px;
+  font-weight: bold;
   color: #2185d0;
 }
 
@@ -281,6 +343,32 @@ padding-right: 20%;
 }
 
 .account-button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sign-out {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  float: right;
+  border-radius: 5px;
+  font-family: Arial;
+  width: 80px;
+  color: white;
+  margin-right: 25px;
+  font-size: 16px;
+  background: #2185d0;
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+}
+
+.sign-out:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
@@ -603,6 +691,10 @@ Main Components
 .cd-schedule .test
 {
   font-size: 0px;
+  height: 0px;
+  width: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .cd-schedule .event-name {
@@ -710,13 +802,12 @@ Main Components
   position: relative;
   z-index: 2;
   line-height: 1.4;
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 95%;
   overflow: hidden;
   font-size: 26px;
   margin-left: 16px;
   padding-top: 12px;
-
 }
  /*text area*/
 .cd-schedule .event-modal .event-info > div {
@@ -725,6 +816,20 @@ Main Components
   width: 100%;
   padding: 1.4em 5%;
 }
+.cd-schedule .event-modal .event-buttons {
+ position: relative;
+  z-index: 2;
+  height: 10%;
+  width: 95%;
+  overflow: hidden;
+  font-size: 48px;
+  text-align: right;
+  margin-left: 16px;
+}
+
+.material-icons.md-48{
+  cursor: pointer;
+  font-size: 36px;}
 
 .cd-schedule .event-modal .header-bg, .cd-schedule .event-modal .body-bg {
   /* these are the morphing backgrounds - visible on desktop only */

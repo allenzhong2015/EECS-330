@@ -117,7 +117,7 @@ jQuery(document).ready(function($){
 
 		//update event content
 		this.modalBody.find('.event-info').html(event.find('.test').html());
-		
+				
 		this.element.addClass('modal-is-open');
 
 		setTimeout(function(){
