@@ -45,6 +45,19 @@ form {
 	height: auto;
 }
 
+.mission-statement {
+  font-size: 30px;
+  margin-top: -25px;
+  font-family: palatino;
+  color: #808080;
+}
+
+.sign-in-text {
+	text-align: center;
+	margin-top: -15px;
+	padding-bottom: 10px;
+}
+
 .header {
 	text-align: center;
 }
@@ -100,7 +113,9 @@ span.psw {
 <title>Punctuality Helper</title>
 <div class="header">
 	<img src="logoo.png" class="logo" alt="logo design">
-	<p>Sign in with your Punctuality Helper Account</p>
+	<div class="mission-statement">
+		<p>Event tracking made easy.</p>
+	</div>
 </div>
 
 <form onsubmit="goToIndex(event)" id = "login_form">
@@ -109,6 +124,9 @@ span.psw {
 	</div>
 
 	<div class="container">
+		<div class="sign-in-text">
+			<p>Sign in with your Punctuality Helper Account</p>
+		</div>
 		<label for="email"><b>Email</b></label>
 		<input type="email" placeholder="Enter Email" name="email" required>
 
