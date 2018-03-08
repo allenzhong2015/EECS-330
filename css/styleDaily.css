@@ -223,21 +223,6 @@ padding-right: 20%;
   text-align: center;
 }
 
-
-.HomeEventButton2 {
-  -webkit-border-radius: 60;
-  -moz-border-radius: 60;
-  margin-top: 10px;
-  color: white;
-  border-radius: 5px;
-  font-family: Arial;
-  width: 350px;
-  font-size: 20px;
-  background: #f1f1f1;      
-  padding: 10px 20px 10px 20px;
-  text-align: center;
-}
-  
 .HomeEventButton:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
@@ -342,57 +327,6 @@ padding-right: 20%;
   color: #2185d0;
 }
 
-.dropbtn {
-        -webkit-border-radius: 60;
-    -moz-border-radius: 60;
-    float: right;
-    border-radius: 5px;
-   font-family: Arial;
-    width: 80px;
-    color: white;
-    margin-right: 25px;
-    font-size: 16px;
-    background: #2185d0;
-    padding: 8px 8px 8px 8px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-      position: relative;
-      display: inline-block;
-      margin-top: -2px;
-      float:right;
-  }
-  
-  .dropdown-content {
-      display: none;
-      position: absolute;
-     background-color: #f1f1f1;
-      min-width: 140px;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-  }
-  
-  .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-     text-decoration: none;
-     font-weight: lighter;
-      font-size: 19px;
-      display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #A8A8A8A8}
-  
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-      background-color: #3cb0fd;
-  }
-
-
 .account-button {
   -webkit-border-radius: 60;
   -moz-border-radius: 60;
@@ -478,16 +412,6 @@ padding-right: 20%;
 .month-header{
   font-size: 30px;
   padding-left: 30%;
-}
-
-.tracker-title{
-  font-size: 40px;
-    padding-left: 20%;
-  }
-  
-  .chart-header{
-    font-size: 30px;
-    padding-left: 50px;
 }
 
 .prev{
@@ -673,7 +597,7 @@ Main Components
     width: 100%;
   }
   .cd-schedule .events .events-group {
-    width: 14.2857%;
+    width: 100%;
     float: left;
     border: 1px solid #EAEAEA;
     /* reset style */
@@ -1175,29 +1099,3 @@ Main Components
 .description {
   font-size: 20px;
 }
-
-/*Data*/
-.center{
-margin-left:0px;
-margin-top: 20px;
-font-size: 50px;
-}
-
-
-.center2{
-margin-left:140px;
-margin-top: 30px;
-font-size: 50px;
-}
-
-.graph{
-  width: 1000px;
-  height: 500px;
-  margin: auto;
-}
-
-.down{
-  width:25px;
-  height:15px;
-}
-

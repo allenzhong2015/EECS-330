@@ -29,9 +29,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
       Sign Out
     </div>
   </a> 
-  <div id="account_button" class="account-button">
-    Account Settings
-  </div>
+  <a href="index_daily.html" id="account_button" class="account-button">
+    Daily View
+  </a>
 </div>
 
 <br>
@@ -105,6 +105,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <li>31</li>
   </ul>
   <div id="create_event_button" class="HomeEventButton">Add Event</div> 
+  <div class="pad"></div>
+  <div id="create_event_button" class="HomeEventButton" onclick="location.href = 'data.html';">View Tardiness</div>
   <br>
   <br>
   <br>
@@ -305,7 +307,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <form action="/create_event.js" method="get" id="create_event_form" onsubmit="handleForm();" novalidate>
 
       <div class="event-title">
-        <input class="event-size" type="text" placeholder="Add Event Title" name="eventname" size="61.75" value="Japanese 111 Class"><br>
+        <input class="event-size" type="text" placeholder="Add Event Title" name="eventname" size="61.75"><br>
       </div>
 
       <div class="date-wrapper">
@@ -361,7 +363,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       </div>
 
       <div class="location-repeat-wrapper">
-        <input type="text" class="location-size" placeholder="Add Location" name="loc" size="26" value="University Library 3370">        
+        <input type="text" class="location-size" placeholder="Add Location" name="loc" size="26">        
       <select name="repeat-dropdown" class="repeat-size">
         <option value="Never">Does Not Repeat</option>
           <option value="Daily" selected="selected">Daily</option>
@@ -400,7 +402,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </form>
 <!-- The Modal -->
 <br>
-<a href="index1.html">
+<a href="index4.html">
   <div id="create_event_button" class="form-button">
     Add Event
   </div>

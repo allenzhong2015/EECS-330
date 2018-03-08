@@ -18,13 +18,6 @@ span.onclick = function() {
     form.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == form) {
-        form.style.display = "none";
-    }
-}
-
 // Get the modal
 var form2 = document.getElementById('myform2');
 
@@ -49,6 +42,9 @@ window.onclick = function(event) {
     if (event.target == form2) {
         form2.style.display = "none";
     }
+    if (event.target == form) {
+        form.style.display = "none";
+    }
 }
 
 function smallAlert(){
@@ -58,3 +54,4 @@ function smallAlert(){
 function importantAlert(){
     alert("EECS 330 discussion begins in 15 mins. Expected time to reach is 7 mins. Leave within the next 8 mins to earn 5 Puncuality Points.");
 }
+

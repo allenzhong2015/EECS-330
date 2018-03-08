@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="css/styleDaily.css"> <!-- Resource style -->
   <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 </style>
@@ -24,20 +24,20 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <div class="title-header">
   <img src="logoo.png" class="logo" alt="logo design"></div>
   <span class="month-header">February 2018</span>      
-  <a href="logout2.html">
+  <a href="logout1.html">
     <div id="sign-out" class="sign-out">
       Sign Out
     </div>
   </a>
-  <a href="index_daily.html" id="account_button" class="account-button">
-    Daily View
+  <a href="index1.html" id="account_button" class="account-button">
+    Weekly View
   </a>
 </div>
 
 <br>
 <br>
 <span class="prev">&#10094;</span>
-<span class="week"> Week 3 </span>
+<span class="week"> 2/12 </span>
 <span class="next">&#10095;</span>
 <br>
 <br>
@@ -105,7 +105,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <li>31</li>
   </ul>
   <div id="create_event_button" class="HomeEventButton">Add Event</div> 
-  <div id="create_event_button" class="HomeEventButton" onclick="location.href = 'data.html';">View Tardiness</div> 
+  <div class="pad"></div>
+  <div id="create_event_button" class="HomeEventButton" onclick="location.href = 'data.html';">View Tardiness</div>
   <br>
   <br>
   <br>
@@ -150,18 +151,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
   
   <div class="events">
     <ul>
-          <li class="events-group">
-        <div class="top-info"><span class="date-font">Sunday<br>11</span></div>
-        <ul>
-
-          
-        </ul>
-      </li>
-
-      <li class="events-group">
+        <li class="events-group">
         <div class="top-info"><span class="current-date-font">Monday<br>12</span></div>
         <ul>
-            <li class="single-event" data-start="11:00" data-end="13:00" data-content="event-Psychology-midterm" data-event="event-2">
+          <li class="single-event" data-start="11:00" data-end="13:00" data-content="event-Psychology-midterm" data-event="event-1">
             <a href="#0">
               <em class="event-name">Psychology Midterm</em>
                 <div class="test">
@@ -174,106 +167,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
           </li>
         </ul>
       </li>
-      <li class="events-group">
-        <div class="top-info"><span class="date-font">Tuesday<br>13</span></div>
-        <ul>
-        <li class="single-event" data-start="9:30" data-end="10:30" data-content="event-Japanese111-class" data-event="event-1">
-            <a href="#0">
-              <em class="event-name">Japanese 111 Class</em>
-                <div class="test">
-                  Location: Main Library 4222
-                  <br>
-                  Notification: 30 minutes before event
-                <br>
-              </div>
-            </a>
-          </li>
-        
-        </ul>
-      </li>
-
-      <li class="events-group">
-        <div class="top-info"><span class="date-font">Wednesday<br>14</span></div>
-
-        <ul>
-          <li class="single-event" data-start="9:30" data-end="10:30" data-content="event-Japanese111-class" data-event="event-1">
-            <a href="#0">
-              <em class="event-name">Japanese 111 Class</em>
-              <div class="test">
-                  Location: Main Library 4222
-                  <br>
-                  Notification: 30 minutes before event
-                <br>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="events-group">
-        <div class="top-info"><span class="date-font">Thursday<br>15</span></div>
-
-        <ul>
-          <li class="single-event" data-start="9:30" data-end="10:30" data-content="event-Japanese111-class" data-event="event-1">
-            <a href="#0">
-              <em class="event-name">Japanese 111 Class</em>
-              <div class="test">
-                  Location: Main Library 4222
-                  <br>
-                  Notification: 30 minutes before event
-                <br>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="events-group">
-        <div class="top-info"><span class="date-font">Friday<br>16</span></div>
-
-        <ul>
-          <li class="single-event" data-start="9:30" data-end="10:30" data-content="event-Japanese111-class" data-event="event-1">
-            <a href="#0">
-              <em class="event-name">Japanese 111 Class</em>
-              <div class="test">
-                  Location: Main Library 4222
-                  <br>
-                  Notification: 30 minutes before event
-                <br>
-              </div>
-            </a>
-          </li>
-          <li class="single-event" data-start="14:00" data-end="15:00" data-content="event-Lincoln-Formal" data-event="event-3">
-            <a href="#0">
-              <em class="event-name">Lincoln Formal</em>
-                <div class="test">
-                  Location: Chicago
-                  <br>
-                  Notification: 30 minutes before event
-                <br>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="events-group">
-        <div class="top-info"><span class="date-font">Saturday<br>17</span></div>
-        <ul>
-          <li class="single-event" data-start="12:00" data-end="13:00" data-content="event-Psychology-midterm" data-event="event-4">
-            <a href="#0">
-              <em class="event-name">EECS Seminar</em>
-                <div class="test">
-                  Location: Sears Tower
-                  <br>
-                  Notification: 45 minutes before event
-                <br>
-              </div>
-            </a>
-          </li>
-          
-        </ul>
-      </l
     </ul>
   </div>
 
@@ -294,7 +187,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <div class="event-info"></div>
       <div class="event-buttons">
         <a id="edit_event_button"><i class='material-icons md-48'>create</i></a>
-        <a href="index3.html"><i class='material-icons md-48'>delete</i></a>
+        <a href="index_home.html"><i class='material-icons md-48'>delete</i></a>
       </div>
       <div class="body-bg"></div>
     </div>
@@ -312,6 +205,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <br >
 
 <!-- The Modal -->
+<!-- The Modal -->
 <div id="myform" class="form-page">
 
   <!-- Modal content -->
@@ -325,16 +219,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
       <div class="date-wrapper">
           <input type="date" id="startDate" name="starttime" class="date-size">
-            <script>document.getElementById('startDate').value = new Date('February, 13, 2018').toISOString().substring(0, 10);</script>
+            <script>document.getElementById('startDate').value = new Date().toISOString().substring(0, 10);</script>
 
           <select name="time-dropdown" id="time-drop" class="time-size" value="12:00">
             <option value="9:00">9:00</option>
-            <option value="9:30" selected="selected">9:30</option>
+            <option value="9:30">9:30</option>
             <option value="10:00">10:00</option>
             <option value="10:30">10:30</option>
             <option value="11:00">11:00</option>
             <option value="11:30">11:30</option>
-            <option value="12:00">12:00</option>
+            <option value="12:00" selected="selected">12:00</option>
             <option value="12:30">12:30</option>
             <option value="13:00">13:00</option>
             <option value="13:30">13:30</option>
@@ -350,18 +244,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
           </select> to
           
           <input type="date" id="endDate" name="endtime" class="date-size">
-            <script>document.getElementById('endDate').value = new Date('February, 13, 2018').toISOString().substring(0, 10);</script>
+            <script>document.getElementById('endDate').value = new Date().toISOString().substring(0, 10);</script>
           
           <select name="time-dropdown" id="time-drop" class="time-size" value="13:00">
             <option value="9:00">9:00</option>
             <option value="9:30">9:30</option>
             <option value="10:00">10:00</option>
-            <option value="10:30" selected="selected">10:30</option>
+            <option value="10:30">10:30</option>
             <option value="11:00">11:00</option>
             <option value="11:30">11:30</option>
             <option value="12:00">12:00</option>
             <option value="12:30">12:30</option>
-            <option value="13:00">13:00</option>
+            <option value="13:00" selected="selected">13:00</option>
             <option value="13:30">13:30</option>
             <option value="14:00">14:00</option>
             <option value="14:30">14:30</option>
@@ -389,7 +283,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <div class="notification">
         <select name="notify-box" class="notify-size">
           <option value="Email">Email</option>
-          <option value="Notification" selected="selected">Notification</option>
+          <option value="Notification">Notification</option>
         </select>
 
         <select name="notify-dropdown" class="notify-size">
@@ -398,9 +292,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
-          <option value="10">10</option>
+          <option value="10" selected="selected">10</option>
           <option value="15">15</option>
-          <option value="30" selected="selected">30</option>
+          <option value="30">30</option>
           <option value="45">45</option>
           <option value="60">60</option>
         </select>
@@ -428,7 +322,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
   <!-- Modal content -->
   <div class="form-content">
-    <span class="form_close2">&times;</span>
+    <span class="form_close2  ">&times;</span>
     <form action="/create_event.js" method="get" id="create_event_form" onsubmit="handleForm();" novalidate>
 
       <div class="event-title">
@@ -527,7 +421,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <!-- The Modal -->
 <br>
 <a href="index2.html">
-  <div id="create_event_button" class="form-button">
+  <div id="create_event_button" class="form-button2">
     Save
   </div>
 </a>
