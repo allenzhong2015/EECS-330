@@ -13,7 +13,7 @@ function daily() {
 
   var options = {
     hAxis: {
-      title: 'February 11th'
+      title: 'February 11th (Hours)'
     },
     vAxis: {
       title: 'Minutes Late'
@@ -38,13 +38,13 @@ function weekly() {
 
   var options = {
     hAxis: {
-      title: 'February - Week 2',
+      title: 'February - Week 2 (Days)',
       maxValue:7,
       format:'0',
       ticks: [0, 1, 2,3,4,5,6,7]
     },
     vAxis: {
-      title: 'Minutes per Day'
+      title: 'Minutes Late per Day'
     },
     colors: ['#a52714', '#097132']
   };
@@ -65,10 +65,10 @@ function monthly() {
 
   var options = {
     hAxis: {
-      title: 'Februrary 2018'
+      title: 'Februrary 2018 (Days)'
     },
     vAxis: {
-      title: 'Minutes per Day'
+      title: 'Minutes Late per Day'
     },
     colors: ['#a52714', '#097132']
   };
