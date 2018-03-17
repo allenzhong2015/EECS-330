@@ -68,6 +68,25 @@ padding-right: 20%;
     text-align: center;
     font-size: 120%;
 }
+
+#ip5 {
+    border: 2px solid #577F92;
+    padding: 8%; 
+    width: 100%;
+    text-align: center;
+    font-size: 120%;
+}
+
+.bot_text{
+padding-left: 12.6%;
+font-size: 150%;
+padding-top: 10px;
+}
+
+.logo:hover{
+
+cursor:pointer;
+}
 /*
 .event-buttons{
   position: absolute;
@@ -75,6 +94,10 @@ padding-right: 20%;
   margin-left: 20px;
 }
 */
+.title_hover:hover{
+    cursor: pointer;
+}
+
 .week {
   font-size: 23px;
   padding-left: 0.3%;
@@ -156,7 +179,7 @@ padding-right: 20%;
 .form-page {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 3; /* Sit on top */
+    z-index: 4; /* Sit on top */
     padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
@@ -204,6 +227,20 @@ padding-right: 20%;
 
 .form_close2:hover,
 .form_close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form_close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form_close3:hover,
+.form_close3:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -328,6 +365,65 @@ padding-right: 20%;
   cursor: pointer;
 }
 
+.cancel-button {
+  text-align: center;
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 5px;
+  font-family: Arial;
+  color: white;
+  font-size: 14px;
+  background: #2185d0;
+  padding: 10px 13px;
+  text-decoration: none;
+}
+/* Modal Content */
+.confirmation {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    width: 65%;
+    text-align: center;
+}
+
+.cancel-button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.yes-button {
+  margin-left: 100px;
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 5px;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  background: #2185d0;
+  padding: 10px 22px;
+  text-decoration: none;
+}
+
+
+.yes-button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .date-font {
   font-size: 100%;
   letter-spacing: 3px;
@@ -371,6 +467,7 @@ padding-right: 20%;
       min-width: 140px;
      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
+      margin-top: 40px;
   }
   
   .dropdown-content a {
@@ -399,7 +496,7 @@ padding-right: 20%;
   float: right;
   border-radius: 5px;
   font-family: Arial;
-  width: 140px;
+  width: 160px;
   color: white;
   margin-right: 25px;
   font-size: 16px;
@@ -992,7 +1089,7 @@ Main Components
   /* this is the 'X' icon */
   position: absolute;
   top: 0;
-  right: -20%;
+  right: 0%;
   z-index: 3;
   background: rgba(0, 0, 0, 0.1);
   /* replace text with icon */
