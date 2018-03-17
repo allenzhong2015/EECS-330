@@ -1,37 +1,37 @@
+
 <!DOCTYPE HTML>
 <html lang = "en">
    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-<title>Punctuality Helper</title>
+<title class="title_hover">Punctuality Helper</title>
 </head>
 <body>
 <div class="title-header">
-	<img src="logoo.png" class="logo" alt="logo design" id="sign-out" onclick="location.href = 'index_home.html';"></div>
-	
-	<span class="tracker-title">Tardiness Tracker</span>
-	
-	<a href="index.html">
-		<div id="sign-out" class="sign-out">
-	  	Sign Out
-		</div>
-	</a>      
-	
-	<div class="dropdown">
-	  <button class="sign-out">Time Frame<FRAME></FRAME>    
-	  <img type="image" src="image/down.png" class = "down">
-	  </button>
-	  <div class="dropdown-content">
-	    <a onclick="daily();">Daily</a>
-	    <a onclick="weekly();">Weekly</a>
-	    <a onclick= "monthly();">Monthly</a>
-	  </div>
-  	</div>
-
-  	<a href="index_home.html">
-  		<div id="sign-out" class="sign-out">
-  			Home
-  		</div>
-  	</a>
+  <img src="logoo.png" class="logo" alt="logo design" id="sign-out" onclick="location.href = 'index3.html';"></div>
+  
+  <span class="tracker-title">Tardiness Tracker</span>
+  
+  <a href="index.html">
+    <div id="sign-out" class="sign-out">
+      Sign Out
+    </div>
+  </a>      
+  
+  <div class="dropdown">
+    <button class="sign-out">Time Frame<FRAME></FRAME>    
+    <img type="image" src="image/down.png" class = "down">
+    </button>
+    <div class="dropdown-content">
+      <a onclick="daily();">Daily</a>
+      <a onclick="weekly();">Weekly</a>
+      <a onclick= "monthly();">Monthly</a>
+    </div>
+    </div>
+    <a href="index3.html">
+      <div id="sign-out" class="sign-out">
+        Home
+      </div>
+    </a>
 </div>
 
 <br>
@@ -46,23 +46,31 @@ google.charts.load('current', {packages: ['corechart', 'line']});
 google.charts.setOnLoadCallback(drawLineColors);
 
 function drawLineColors() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('number', 'X');
-      data.addColumn('number', 'Time Spent');
-      data.addRows([
-    [0, 0],    [1, 100],   [2, 23],  [3, 17],   [4, 18],  [5, 9],
-    [6, 11],   [7, 27],  [8, 100],  [9, 40],  [10, 32], [11, 35], [12, 0],[13, 0],[14, 0],[15, 0],[16, 0],[17, 0],[18, 0],[19, 0],[20, 0],[21, 0],[22, 0],[23, 0],[24, 0],[25, 0],[26, 0],[27, 0],[28, 0],
-    ]);
+      var data = google.visualization.arrayToDataTable([
+  ['Monthly Activity', 'Time'],
+  ['Week 1', 21],
+  ['Week 2', 8],
+  ['Week 3', 0],
+  ['Week 4', 0]
+]);  
 
-      var options = {
-        hAxis: {
-          title: 'Februrary 2018 (Days)'
-        },
-        vAxis: {
-          title: 'Minutes Late per Day'
-        },
-        colors: ['#a52714', '#097132']
-      };
+//data.addColumn('number', 'X');
+
+  /*        
+  data.addColumn('number', 'Time');
+  data.addRows([
+    [0, 0],    [1, 100],   [2, 23],  [3, 17],   [4, 18],  [5, 9]
+  ]);
+  */
+  var options = {
+    hAxis: {
+      title: 'Februrary 2018 (Weeks)'
+    },
+    vAxis: {
+      title: 'Hours Late per Week'
+    },
+    colors: ['#a52714', '#097132']
+  };
 
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       chart.draw(data, options);
@@ -71,6 +79,18 @@ function drawLineColors() {
 <body>
 <script type="text/javascript" src="chart.js"></script>
 <div id="chart_div" class = "graph" style="width: 100%; height: 500px;"></div>
+<br>
+<div class="bot_text"> Events most often late: <i>Japanese Class 111</i> </div> <br>
+<div class="bot_text"> <b> Japanese Class 111 </b> </div>
+<hr>
+<div class="bot_text"> Day most often late: <i>Tuesday</i> </div>
+<div class="bot_text"> Most minutes late for an event: <i>59 minutes</i> </div>
+<div class="bot_text"> Average minutes late (Past Week): <i>25 minutes</i> </div>
+<div class="bot_text"> Average minutes late (Past Month): <i>40 minutes</i> </div>
+<br>
+
+
+
 </body>
 </html>
 

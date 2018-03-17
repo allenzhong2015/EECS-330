@@ -54,21 +54,28 @@ function weekly() {
 }
 
 function monthly() {
-  var data = new google.visualization.DataTable();
-  data.addColumn('number', 'X');
+var data = google.visualization.arrayToDataTable([
+  ['Monthly Activity', 'Time'],
+  ['Week 1', 21],
+  ['Week 2', 8],
+  ['Week 3', 0],
+  ['Week 4', 0]
+]);  
+
+//data.addColumn('number', 'X');
+
+  /*        
   data.addColumn('number', 'Time');
   data.addRows([
-    [0, 0],    [1, 100],   [2, 23],  [3, 17],   [4, 18],  [5, 9],
-    [6, 11],   [7, 27],  [8, 100],  [9, 40],  [10, 32], [11, 35], [12, 0],[13, 0],[14, 0],[15, 0],[16, 0],[17, 0],[18, 0],[19, 0],[20, 0],[21, 0],[22, 0],[23, 0],[24, 0],[25, 0],[26, 0],[27, 0],[28, 0],
-
+    [0, 0],    [1, 100],   [2, 23],  [3, 17],   [4, 18],  [5, 9]
   ]);
-
+  */
   var options = {
     hAxis: {
-      title: 'Februrary 2018 (Days)'
+      title: 'Februrary 2018 (Weeks)'
     },
     vAxis: {
-      title: 'Minutes Late per Day'
+      title: 'Hours Late per Week'
     },
     colors: ['#a52714', '#097132']
   };
@@ -76,4 +83,3 @@ function monthly() {
   var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
   chart.draw(data, options);
 }
-
