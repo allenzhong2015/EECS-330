@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<title class="title_hover">Punctuality Helper</title>
+</head>
+<body>
+<div class="title-header">
+  <img src="logoo.png" class="logo" alt="logo design" id="sign-out" onclick="location.href = 'index1.html';"></div>
+  
+  <span class="tracker-title">Tardiness Tracker</span>
+  
+  <a href="index.html">
+    <div id="sign-out" class="sign-out">
+      Sign Out
+    </div>
+  </a>      
+  
+  <div class="dropdown">
+    <button class="sign-out">Time Frame<FRAME></FRAME>    
+    <img type="image" src="image/down.png" class = "down">
+    </button>
+    <div class="dropdown-content">
+      <a onclick="dailyChart();">Daily</a>
+      <a onclick="weeklyChart();">Weekly</a>
+      <a onclick= "monthlyChart();">Monthly</a>
+    </div>
+    </div>
+
+    <a href="index1.html">
+      <div id="sign-out" class="sign-out">
+        Home
+      </div>
+    </a>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(dailyChart);
+
+function dailyChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Daily Activity', 'Facebook', 'Instagram', 'Twitter'],
+          ['Messaging', 20, 40, 20],
+          ['Browsing', 17, 46, 25],
+          ['Watching Videos', 66, 12, 30],
+          ['Posting', 13, 54, 35]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Social Media Usage Breakdown',
+            subtitle: 'Profile: Will Smith',
+          },
+          bars: 'vertical',
+          vAxis: {format: 'decimal', title: "Minutes Late"},
+          height: 500,
+          colors: ['#E74C3C', '#9B59B6'  , '#5DADE2']
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('chart_div'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+
+        var btns = document.getElementById('btn-group');
+
+        btns.onclick = function (e) {
+
+          if (e.target.tagName === 'BUTTON') {
+            options.vAxis.format = e.target.id === 'none' ? '' : e.target.id;
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+          }
+        }
+      }
+</script>
+</head>
+<body>
+<script type="text/javascript" src="bar.js"></script>
+<div id="chart_div" class = "graph" style="width: 85%; height: 600px;"></div>
+</body>
+</html>

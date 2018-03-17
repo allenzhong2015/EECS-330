@@ -27,6 +27,8 @@ var btn2 = document.getElementById("edit_event_button");
 // Get the <span> element that closes the modal
 var span2 = document.getElementsByClassName("form_close2")[0];
 
+
+
 // When the user clicks the button, open the modal 
 btn2.onclick = function() {
     form2.style.display = "block";
@@ -37,6 +39,30 @@ span2.onclick = function() {
     form2.style.display = "none";
 }
 
+
+var form3 = document.getElementById('myform3');
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("delete-button");
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("form_close3")[0];
+
+// Get the button that closes the modal
+var btn4 = document.getElementById("cancel-button");
+
+btn3.onclick = function() {
+    form3.style.display = "block";
+}
+
+btn4.onclick = function() {
+    form3.style.display = "none";
+}
+
+span3.onclick = function() {
+    form3.style.display = "none";
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == form2) {
@@ -45,7 +71,11 @@ window.onclick = function(event) {
     if (event.target == form) {
         form.style.display = "none";
     }
+    if (event.target == form3) {
+        form3.style.display = "none";
+    }
 }
+
 
 function smallAlert(){
     alert("Japanese 111 begins in 10 mins. Expected time to reach is 4 mins. Leave within the next 6 mins to earn 3 Puncuality Points.");
